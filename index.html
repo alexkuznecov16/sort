@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="lv">
+	<!--
+ooooooooo.   ooooooooo.         .oooooo..  ooooo                  ooo
+`888   `Y88. `888   `Y88.      d8P'    `Y8 `888                   888            
+ 888   .d88'  888   .d88'      Y88bo.       888  oooo   .ooooo.   888   .oooo.
+ 888ooo88P'   888ooo88P'        `"Y8888o.   888 .8P'   d88' `88b  888  `P  )88b
+ 888          888                   `"Y88b  888888.    888   888  888   .oP"888
+ 888          888              oo     .d8P  888 `88b.  888   888  888  d8(  888
+o888o        o888o             8""88888P'  o888o o888o `Y8bod8P' o888o `Y888 "8o
+
+					Aleksandrs Kuzņecovs
+					   Jūrmala, Latvia
+					  PP Skola (C) 2018
+
+The information contained on my Website is for general information purposes only. My Website assumes no responsibility for errors or omissions in the contents on the Service.
+
+In no event shall my Website be liable for any special, direct, indirect, consequential, or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort, arising out of or in connection with the use of the Service or the contents of the Service. I reserve the right to make additions, deletions, or modification to the contents on the Service at any time without prior notice. I do not warrant that the website is free of viruses or other harmful components.
+
+External links disclaimer
+My Website may contain links to external websites that are not provided or maintained by or in any way affiliated with me. Please note that the my Website does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites.
+
+Compatibility
+The correctness of the code (HTML5, CSS3 and JavaScript) has been verified on Wiidows (version 10.11 and higher) and macOS (versions 10.12 and higher) operating systems. Verification of the correctness of work was carried out in such major browsers as: Google Chrome, Microsoft Edge, Apple Safari, Mozilla Firefox and Opera.
+-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Aleksandrs (C)" />
+		<title>Sort...</title>
+		<link rel="icon" type="image/png" href="./images/favicon.png" />
+		<!--  Google Fontu saite  -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Spinnaker" />
+		<!--  Font Awesome saite  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css" />
+		<!--  Ārējie faili ar CSS kodu  -->
+		<link rel="stylesheet" href="./styles/project-styles.css" />
+	</head>
+	<body>
+		<!--  Virsraksts  -->
+		<p class="izmerXXL" style="margin-bottom: 0px"><i class="fas fa-laptop-code"></i> Skaitlu un burtu sortešana</p>
+		<p class="izmerM zils centra" style="margin: 10px 0px 0px 0px">[ Tēma ir veltīta CSS3 dizaina stila optimizācijas problēmai HTML5 dokumentā. ]</p>
+
+		<!--  Darba galds  -->
+		<main>
+			<div class="ievade">
+				<p class="izmerL"
+					>Lūdzu, ievadiet skaitlus vai burtus pec tada piemera: <br />
+					6 3 5 1 7 2...</p
+				>
+				<!--  Teksta lauki datu ievadīšanai  -->
+				<label for="ievade1">Ievadiet vērtības:</label>
+				<input type="text" id="ievade1" placeholder="27 89 516 2" />
+				<br /><br />
+				<!--  Lauks (atlasīt) ar datiem, kas jānodod JS funkcijai  -->
+				<label for="maniDati1">Izvelejiet vertības tipu:</label><br />
+				<select id="maniDati1">
+					<option value="0" selected>Izvēle</option>
+					<option value="1">Skaitļis</option>
+					<option value="2">Burts</option>
+				</select>
+				<br /><br />
+				<!--  Lauks (atlasīt) ar datiem, kas jānodod JS funkcijai  -->
+				<label for="maniDati2">Izvelejiet sortesanas secibu:</label><br />
+				<select id="maniDati2">
+					<option value="0" selected>Izvēle</option>
+					<option value="1">Dilstoša</option>
+					<option value="2">Augoša</option>
+				</select>
+				<br /><br />
+				<!--  Poga JS koda sākšanai  -->
+				<input type="button" onclick="menedzFunk();" value="Aprēķināt" />
+				<br /><br /><hr /><br />
+				<!--  Poga, lai nodzēst visus laukus (Reset)  -->
+				<input type="button" onclick="dzestFunk();" value="Dzēst visu" />
+			</div>
+			<div class="izvade">
+				<!--  Lauks ar resultātu  -->
+				<label for="mansRezultats">JavaScript koda darba rezultāts:&emsp;</label>
+				<textarea id="mansRezultats" placeholder="Rezultāts" rows="19" spellcheck="false" style="width: 99%; font-size: 22px; color: lime; background-color: black; padding: 18px"></textarea>
+			</div>
+		</main>
+
+		<!--  Paskaidrojumi par to, kā projekts darbojas  -->
+		<details>
+			<summary class="izmerXL">Kā tas darbojas?</summary>
+			<!---------------------------------------->
+			<p class="izmerL">1. Ievads</p>
+			<blockquote
+				>Šis projekts nepieciešams tam, lai lietotājs varētu sakārtot skaitļus vai burtus nepieciešamajā secībā. Tālāk esošajā laukā ir sniegts JavaScript kods ar detalizētiem šī projekta
+				skaidrojumiem.</blockquote
+			>
+			<!---------------------------------------->
+			<p class="izmerL">2. JavaScript kods</p>
+			<blockquote>
+				Projektā tiek izmantotas četras galvenās funkcijas:
+				<ol>
+					<li
+						>pārvaldnieka funkcija '<span class="zils">menedzFunk()</span>' datu iegūšanai no lietotāja, visu pārējo funkciju izsaukšanai un gala rezultātu izdrukāšanai (šī funkcija tiek
+						aktivizēta, noklikšķinot uz pogas 'Aprēķināt');</li
+					>
+					<li>funkcija vērtību testēšanai '<span class="zils">parbaudFunk(ievaditi skaitli/burti, vertibas tips, kartosanas tips)</span>', ko ievadījis un izvelejis lietotājs;</li>
+					<li>galvenā funkcija '<span class="zils">galvenaFunk(rezultats)</span>', lai atrisinātu doto projektu;</li>
+					<li
+						>funkcija, lai notīrītu visas lauku vērtības '<span class="zils">dzestFunk()</span>' pirms jauno vērtību palaišanas (šī funkcija tiek aktivizēta, noklikšķinot uz pogas 'Dzēst
+						visu');</li
+					>
+				</ol>
+				Šī projekta galvenās funkcijas JavaScript kods ir parādīts laukā zemāk:
+			</blockquote>
+			<i class="fa-brands fa-js"></i>
+			<pre>
+<span class="peleks">//  Funkcija datu iegūšanai un gala rezultātu izdrukāšanai</span>
+function menedzFunk() {
+	let ievad1 = document.getElementById('ievade1').value.split(' '); <span class="peleks">// ievaditi skaitli/burti. Tapec ka ir .value.split =>dati bus massivaa</span>
+	let input1 = document.getElementById('maniDati1').value; <span class="peleks">// ievad1 ievaditu datu tips (skaitli vai  burti)</span>
+	let input2 = document.getElementById('maniDati2').value; <span class="peles">// kartosanas seciba (dilstosa vai augosa)</span>
+	let outputArea = document.getElementById('mansRezultats'); <span class="peleks">// rezulatatu lauks</span>
+
+	let sortFunction = parbaudFunk(ievad1, input1, input2); <span class="peleks">// mainigais, kurs sanems rezultatu no testešanas</span>
+	
+	if (sortFunction[1] == false) {
+		outputArea.style.color = 'red'; <span class="peleks">// kludu krasa</span>
+		outputArea.value = sortFunction[0]; <span class="peleks">// kludu rezultatu atsutam HTML</span>
+	} else {
+		let outputResult = ievad1.sort(sortFunction[0]); <span class="peleks">
+			// mainigais pareizam rezultatam
+		</span>
+		outputArea.style.color = 'green'; <span class="peleks">// pareiza krasa</span>
+		outputArea.value = outputResult; <span class="peleks">// rezultatu atsutam HTML</span>
+	}
+}
+			</pre>
+
+			<i class="fa-brands fa-js"></i>
+			<pre>
+<span class="peleks">// Funkcija datu testešanai un rezultata iegušanai</span>
+function parbaudFunk(userIevad, valueType, sortType) {
+	if (userIevad == '' || userIevad.length <= 0) {
+		return ['Nav ievaditi dati!', false]; <span class="peleks">// ja bav ievaditi dati</span>
+	} else if (userIevad.includes(' ')) {
+		return ['Drikst lietot tikai vienu SPACE blakus datiem!', false]; <span class="peleks">// ja ir divi pec kartas SPACE izdariti</span>
+	} else if (valueType == 0 || sortType == 0) {
+		return ['Jus neesat izvelejusi input vertibu!', false]; <span class="peleks">// ja viens no inputiem nav izvelets</span>
+	} else if (sortType == 1 && valueType == 1) {
+		return [(a, b) => b - a, true]; <span class="peleks">// augosa seciba skaitliem</span>
+	} else if (sortType == 2 && valueType == 1) {
+		return [(a, b) => a - b, true]; <span class="peleks">// dilstosa seciba skaitliem</span>
+	} else if (sortType == 1 && valueType == 2) {
+		return [(a, b) => b.localeCompare(a, 'en'), true]; <span class="peleks">// localeCompare - ir metods kurs karto burtus dilstoša secība</span>
+	} else if (sortType == 2 && valueType == 2) {
+		return [, true]; <span class="peleks">// nav nekas ievadits, jo pec .sort() pamatam bus augosa</span>
+	}
+}
+			</pre>
+			<blockquote
+				>Noklikšķiniet uz <a href="" onclick="izveidotDok()">šīs ikonas <i class="fa-solid fa-diagram-project"></i></a>, lai skatītu šī JavaScript koda blokshēmu.</blockquote
+			>
+
+			<!---------------------------------------->
+			<p class="izmerL">3. Secinājumi</p>
+			<blockquote>
+				Šis ir jauks piemērs, ko varat izmantot savā turpmākajā darbā, kā arī personīgā kodu bibliotēkā turpmākai lietošanai. Šajā projektā bija dažas sarežģītas vietas:
+				<span class="sarkan">...</span> un <span class="sarkan">...</span>. Bet ar skolotāja palīdzību tās visas tika atrisinātas un zinu, ka noteikti varēšu tās izmantot savā turpmākajā
+				darbā. Visas šīs sarežģītās problēmas bija galvenajā funkcijā.
+			</blockquote>
+		</details>
+
+		<footer>
+			<!--  Atsauces virsraksts  -->
+			<div class="suna1">
+				<p class="izmerXL">Šajā projektā izmantotās atsauces:</p>
+			</div>
+			<!--  PP Skolā izmantotās atsauces  -->
+			<div>
+				<p class="izmerL">PP Skola</p>
+				<ol>
+					<li><a href="http://ppskola.epizy.com/" target="_blank">HTML5</a></li>
+					<li><a href="http://ppskola.epizy.com/" target="_blank">CSS3</a></li>
+					<li><a href="http://ppskola.epizy.com/js-teorija.html" target="_blank">JavaScript</a></li>
+					<li><a href="http://ppskola.epizy.com/python-praktikums.html" target="_blank">Python 3.1</a></li>
+					<li><a href="http://ppskola.epizy.com/paradiman/" target="_blank">Parādi man</a></li>
+					<li><a href="http://ppskola.epizy.com/code-library/" target="_blank">Kodu bibliotēka</a></li>
+				</ol>
+			</div>
+			<!--  W3Schools izmantotās atsauces  -->
+			<div>
+				<p class="izmerL">W3Schools</p>
+				<ol>
+					<li><a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML5</a></li>
+					<li><a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS3</a></li>
+					<li><a href="https://www.w3schools.com/js/default.asp" target="_blank">JavaScript</a></li>
+					<li><a href="https://www.w3schools.com/python/default.asp" target="_blank">Python 3.1</a></li>
+					<li><a href="https://www.w3schools.com/css/css_examples.asp" target="_blank">CSS Examples</a></li>
+					<li><a href="https://www.w3schools.com/js/js_examples.asp" target="_blank">JavaScript Examples</a></li>
+				</ol>
+			</div>
+		</footer>
+
+		<!--***( Konteineri ar fiksētu atrašanās vietu )***-->
+		<!--  PP logotips  -->
+		<a href="http://ppskola.epizy.com" target="_blank"
+			><p class="ppFA"
+				>PP SK<i class="fas fa-power-off"></i>L<i class="fas fa-at"></i><br />
+				<span style="margin-left: 10px; font: 0.6em Arial; font-style: italic">{ codēšana = dzeja }</span></p
+			></a
+		>
+
+		<!--  Ārējais fails ar JavaScript kodu  -->
+		<script src="./scripts/project-script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,274 @@
+/*******************************************************************************
+
+ooooooooo.   ooooooooo.         .oooooo..  ooooo                  ooo
+`888   `Y88. `888   `Y88.      d8P'    `Y8 `888                   888            
+ 888   .d88'  888   .d88'      Y88bo.       888  oooo   .ooooo.   888   .oooo.
+ 888ooo88P'   888ooo88P'        `"Y8888o.   888 .8P'   d88' `88b  888  `P  )88b
+ 888          888                   `"Y88b  888888.    888   888  888   .oP"888
+ 888          888              oo     .d8P  888 `88b.  888   888  888  d8(  888
+o888o        o888o             8""88888P'  o888o o888o `Y8bod8P' o888o `Y888 "8o
+
+					Pāvels Proskurovskis
+					   Jūrmala, Latvia
+					  PP Skola (C) 2018
+					  
+*******************************************************************************/
+/**/
+/*  Saglabājiet jebkuras konteinera noteikto platumu un augstumu  */
+* {box-sizing: border-box;}
+/*  Dokumenta mainīgie  */
+:root {
+	--fona-krasa: #fffaf3;
+	--tekst-kras: #482900;
+	--eena-krasa: #b1afad;
+	--kajen-fons: #5c6f50;
+	--kajen-burt: #fffaf3;
+	--saite-pama: #ea7d00;
+	--sarka-kras: #ff0000;
+	--zila-krasa: #1860e4;
+	--zala-krasa: #00ff00;
+	--dzelt-kras: #d4d400;
+	--violet-kra: #7524de;
+	--pelek-kras: #b2b1b0;
+	--balta-kras: #ffffff;
+	--melna-kras: #333333;
+}
+/*  Dokumenta mainīgie  
+:root {
+	--fona-krasa: #fffaf3;
+	--tekst-kras: #482900;
+	--eena-krasa: #b1afad;
+	--kajen-fons: #5c6f50;
+	--kajen-burt: #fffaf3;
+	--saite-pama: #ea7d00;
+	--sarka-kras: #ff0000;
+	--zila-krasa: #1860e4;
+	--zala-krasa: #00ff00;
+	--dzelt-kras: #d4d400;
+	--violet-kra: #7524de;
+	--pelek-kras: #b2b1b0;
+	--balta-kras: #ffffff;
+	--melna-kras: #333333;
+}*/
+/*  BODY tagu vispārīgais stils  */
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: var(--fona-krasa);
+	font: 1.1em "Spinnaker", sans-serif;
+	letter-spacing: .09em;
+	color: var(--tekst-kras);
+}
+/*  Teksta izmēri un polsterējums  */
+.izmerXS {font: bold .7em "Spinnaker";}
+.izmerS {font: bold .9em "Spinnaker";}
+.izmerM {font-size: 1em;}
+.izmerL {font-size: 1.5em;}
+.izmerXL {font-size: 2em;}
+.izmerXXL, .izmerXXXL {
+	font: bold 3em "Audiowide";
+	text-align: center;
+	text-shadow: 4px 4px 3px var(--eena-krasa);
+	letter-spacing: .1em;
+}
+.izmerXXXL {font-size: 4em;}
+.atstrpH {margin: 0px 2em;}
+.atstrpV {margin: 2em 0px;}
+.centra {text-align: center;}
+/*  Hipersaites  */
+a {color: var(--saite-pama); text-decoration: none; transition: .3s;}
+a:hover, a:focus, a:active {color: var(--sarka-kras); text-decoration: underline;}
+/*  Tekstam ar kodu  */
+.zals {
+	color: #00866c;
+	font-style: italic;
+}
+.zils {color: var(--zila-krasa);}
+.sarkan {color: var(--sarka-kras);}
+.peleks {color: var(--pelek-kras);}
+.balts {color: var(--balta-kras);}
+.melns {color: var(--melna-kras);}
+/*  Horizontālā līnija  */
+hr {border: 1px solid var(--pelek-kras); width: 75%;}
+/*  Atlasītā teksta stils  */
+::selection {color: var(--sarka-kras); background: var(--dzelt-kras);}
+/***************************************/
+main {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	min-height: 700px;
+}
+.ievade, .izvade {
+	display: block;
+	position: absolute;
+	top: 30px;
+	margin: 20px 0px 20px 0px;
+	padding: 30px;
+	width: 45%;
+	min-height: 620px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 16px 12px var(--eena-krasa);
+}
+.ievade {left: 30px;}
+.izvade {right: 30px;}
+/*****************************************/
+/******** Ievades veida elementi *********/
+/*  Teksta lauks  */
+input[type=text], input[type=number], input[type=date] {
+	width: 100%;
+	padding: 6px;
+	font: 1em Verdana;
+	border: 2px solid #838383;
+	border-radius: 8px;
+	box-shadow: inset 3px 3px 2px #6f6f6f;
+	outline: none;
+}
+/*****************************************/
+/*  Pogas stils  */
+input[type=button] {
+	padding: 6px 15px;
+	width: 100%;
+	background-image: linear-gradient(#0071db, #ffffff, #00519d);
+	font: 1em Verdana;
+	color: #000000;
+	cursor: pointer;
+	border: 2px solid #00519d;
+	border-radius: 8px;
+	outline: none;
+	box-shadow: 9px 9px 8px #828282;
+	transition: .25s;
+}
+input[type=button]:nth-last-of-type(1) {
+	border: 2px solid #ff2a2a;
+	background-image: linear-gradient(#ff7474, #ffffff, #ff2a2a);
+	color: #000000;
+}
+/*  Nospiediet pogas efekta simulāciju  */
+input[type=button]:active {
+	box-shadow: 4px 4px 2px var(--eena-krasa);
+	transform: translateY(4px);
+}
+/*****************************************/
+/***********  Lauks: atlasīt  ************/
+select {
+	width: 150px;
+	margin: 0px;
+	padding: 3px;
+	font: bold 1em 'Spinnaker';
+	border: 2px solid var(--pelek-kras);
+	border-radius: 8px;
+	box-shadow: inset 3px 3px 2px var(--eena-krasa);
+	outline: none;
+	transition: .2s;
+}
+select:hover {box-shadow: none;}
+/*****************************************/
+/************  Izvades lauks  ************/
+textarea {
+	margin: 0px auto;
+	padding: 18px;
+	width: 99%;
+	border-radius: 16px;
+	background-color: var(--melna-kras);
+	font-size: 22px;
+	color: var(--zala-krasa);
+}
+/***************************************/
+/*********  Saliekamā sekcija  *********/
+details {
+	margin: 40px auto 60px auto;
+	padding: 40px 20px 40px 40px;
+	width: 80%;
+	border-radius: 12px;
+	transition: .3s;
+}
+details:hover {
+	background-color: var(--balta-kras);
+	box-shadow: inset 0px 0px 18px 16px var(--pelek-kras);
+}
+summary {cursor: pointer;}
+/*  Rindkopa ar kreiso malu 40px  */
+blockquote {width: 90%;}
+/*  FontAwesome ikonas  */
+.fa-brands {
+	margin: 0px;
+	font-size: 3em;
+	color: var(--dzelt-kras);
+	transform: translateY(25px);
+}
+.fa-solid {margin: 0px 9px; font-size: 2em;}
+/*  Lauks kodam  */
+pre {
+	display: block;
+	margin: 10px 20px 60px 0px;
+	padding: 20px 20px 0px 20px;
+	width: 94%;
+	border-radius: 12px;
+	background-color: var(--melna-kras);
+	font: 1.2em "Spinnaker";
+	color: var(--zala-krasa);
+	overflow: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	box-shadow: 14px 14px 12px var(--eena-krasa);
+}
+/***************************************/
+/*********  Kajene konteiners  *********/
+footer {
+	/*  Display containers as a table with 3 columns and 2 rows  */
+	display: grid;
+	grid-template-columns: 50% 50%;/* width of the columns */
+	/*  These 3 lines are't necessary but they make it look better  */
+	grid-template-rows: 4em auto;			/* height of the rows */
+	grid-gap: 20px;							/* if all gaps are even */
+	/*  Regular properties of the container  */
+	width: 100%;
+	padding: 20px;
+	background-color: var(--kajen-fons);
+	color: var(--kajen-burt);
+}
+/*  Pirmās šūnas platuma definīcija  */
+footer > div {
+	display: block;
+	padding: 20px 40px;
+}
+.suna1 {
+	grid-column-end: span 2;
+	text-align: center;
+}
+/***************************************/
+/*********  PP logotipa stils  *********/
+.ppFA {
+	position: absolute;
+	top: 2px;
+	right: 10px;
+	z-index: 22;
+	margin: 0px;
+	font: bold normal 1.8em 'Audiowide';
+	color: var(--zila-krasa);
+	line-height: .7;
+	text-shadow: 4px 4px 6px #6d6a70;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.ppFA:hover {
+	transform: translateY(3px);
+	color: var(--violet-kra);
+	text-shadow: 6px 6px 5px #6d6a70;
+}
+/***************************************/
+/*  Stili dažādām ierīcēm: planšetdatoram un viedtālrunim  */
+@media screen and (max-width: 1100px) {
+	body {font: .9em "Spinnaker";}
+	main {flex-direction: column;}
+	.ievade, .izvade {position: relative; width: 90%;}
+	.izvade {left: 30px;}
+}
+@media screen and (max-width: 800px) {
+	body {font: .8em Arial;}
+}
+/***************************************/
