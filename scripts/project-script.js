@@ -15,43 +15,46 @@ o888o        o888o             8""88888P'  o888o o888o `Y8bod8P' o888o `Y888 "8o
 *******************************************************************************/
 //  Funkcija datu iegūšanai un gala rezultātu izdrukāšanai
 function menedzFunk() {
-	let ievad1 = document.getElementById('ievade1').value.split(' '); // ievaditi skaitli/burti. Tapec ka ir .value.split =>dati bus massivaa
-	let input1 = document.getElementById('maniDati1').value; // ievad1 ievaditu datu tips (skaitli vai  burti)
-	let input2 = document.getElementById('maniDati2').value; // kartosanas seciba (dilstosa vai augosa)
-	let outputArea = document.getElementById('mansRezultats'); // rezultatu lauks
+	let ievad1 = document.getElementById('ievade1').value; // a puse (katets)
+	let ievad2 = document.getElementById('ievade2').value; // b puse (katets)
+	let ievad3 = document.getElementById('ievade3').value; // c puse (hipotenuza)
+	let resultArea = document.getElementById('mansRezultats'); // izvades lauks
+	let parbaudResult = parbaudFunk(ievad1, ievad2, ievad3); // mainigajs lai sanemtu rezultatu
 
-	let sortFunction = parbaudFunk(ievad1, input1, input2); // mainigais, kurs sanems rezultatu no testešanas ()
-	
-	if (sortFunction[1] == false) {
-		outputArea.style.color = 'red'; // kludu krasa
-		outputArea.value = sortFunction[0]; // kludu rezultatu atsutam HTML
+	if (parbaudResult[1] === false) {
+		resultArea.value = parbaudResult[0]; // sanemam negativo atbildi
+		resultArea.style.color = 'red'; // krasa ir sarkana, jo rezultats ir negativs
 	} else {
-		let outputResult = ievad1.sort(sortFunction[0]); // mainigais pareizam rezultatam
-		outputArea.style.color = 'green'; // pareiza krasa
-		outputArea.value = outputResult; // rezultatu atsutam HTML
+		let finalResult = galvenaFunk(parbaudResult[0]); // atsutam pozitivo rezultatu galvenaja funkcija
+		resultArea.value = finalResult; // galvenaja funkcija rezultats bus redzams izvades lauka
+		resultArea.style.color = 'lime'; // krasa ir laima, jo rezultats ir pozitivs
 	}
 }
-/////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
 // Funkcija datu testešanai un rezultata iegušanai
-function parbaudFunk(userIevad, valueType, sortType) {
-	if (userIevad == '' || userIevad.length <= 0) {
-		return ['Nav ievaditi dati!', false]; // ja bav ievaditi dati
-	} else if (userIevad.includes(' ')) {
-		return ['Drikst lietot tikai vienu SPACE blakus datiem!', false]; // ja ir divi pec kartas SPACE izdariti
-	} else if (valueType == 0 || sortType == 0) {
-		return ['Jus neesat izvelejusi input vertibu!', false]; // ja viens no inputiem nav izvelets
-	} else if (sortType == 1 && valueType == 1) {
-		return [(a, b) => b - a, true]; // augosa seciba skaitliem
-	} else if (sortType == 2 && valueType == 1) {
-		return [(a, b) => a - b, true]; // dilstosa seciba skaitliem
-	} else if (sortType == 1 && valueType == 2) {
-		return [(a, b) => b.localeCompare(a, 'en'), true]; // localeCompare - ir metods kurs karto burtus dilstoša secība
-	} else if (sortType == 2 && valueType == 2) {
-		return [, true]; // nav nekas ievadits, jo ja mes ievad1.sort() - un mums vajadzes kartot burtus pec augosa seciba tad neko nevajag rakstit, jo pec funkcija sort karto augosa seciba pec pamatdatiem
+function parbaudFunk(ievad1, ievad2, ievad3) {
+	let result; // rezultata mainigajs
+	if (ievad1 == '' && ievad2 == '' && ievad3 == '') {
+		result = ['Ievades laukos nevar but tuksi!', false]; // parbaud vai viens no laukiem ir tukss
+	} else if (ievad1 == '' || ievad2 == '' || ievad3 == '') {
+		result = ['Kaut kads ievades lauks ir tukss!', false]; // parbaud vai lauks kaut kads ir tukss
+	} else if (Number(ievad1) >= Number(ievad3) || Number(ievad3) <= Number(ievad2)) {
+		result = ['Hipotenuza c var but tikai vairak neka kateti!', false]; // parbaud matematiskus likumus
+	} else if (Number(ievad1) + Number(ievad2) >= Number(ievad3)) {
+		result = ['Katetu summa nevar but vienada vai vairak neka hipotenuza c!', false]; // parbaud matematiskus likumus
+	} else {
+		// Funkcija lai atrastu trijstura laukumu
+		function findTriangleArea(a, b) {
+			return (area = 0.5 * a * b);
+		}
+		let triangleAreaResult = findTriangleArea(ievad1, ievad2); // trijsuta laukums (rezultats)
+		ievad1 = Number(ievad1); // to number
+		ievad2 = Number(ievad2); // to number
+		ievad3 = Number(ievad3); // to number
+		result = [`Perimetrs = ${ievad1 + ievad2 + ievad3}\n>> Pusperimetrs = ${(ievad1 + ievad2 + ievad3) / 2}\n>> Diametrs = ${2 * Math.floor(Math.sqrt(ievad1 ** 2 + ievad2 ** 2))}\n>> Laukums = ${triangleAreaResult} `,true,];
 	}
+	return result; // atsutam rezultatu uz menedzFunk()
 }
-/////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////
 //  Funkcija, lai atrisinātu doto projektu
 function galvenaFunk(rezultats) {
@@ -62,8 +65,8 @@ function galvenaFunk(rezultats) {
 //  Funkcija, lai notīrītu visas lauku vērtības
 function dzestFunk() {
 	document.getElementById('ievade1').value = ''; // teksta lauki
-	document.getElementById('maniDati1').value = ''; // input lauki
-	document.getElementById('maniDati2').value = ''; // input lauki
+	document.getElementById('ievade2').value; // teksta lauki
+	document.getElementById('ievade3').value; // teksta lauki
 	document.getElementById('mansRezultats').value = ''; // izvades lauks
 }
 /////////////////////////////////////////////////////////
@@ -73,7 +76,7 @@ function izveidotDok() {
 	var jaunsLogs = window.open('', '_blank', 'top=0,left=100,width=700,height=850');
 	//  Jaunā dokumenta HTML5 un CSS3 kods
 	var mansDok =
-		'<title>Diagramma</title><body style="margin:0; padding:10px; background-color:#e3ece3; text-align:center;"><img src="../img/skaitliunburtiKARTOSANA.png" style="width: 95%;" alt="No JavaScript code in this example"><br></body>';
+		'<title>Diagramma</title><body style="margin:0; padding:10px; background-color:#e3ece3; text-align:center;"><img src="./images/flowchart_Mon_Nov_06_2023_17_45_33_GMT+0200_(Eastern_European_Standard_Time).svg" style="width: 95%;" alt="No JavaScript code in this example"><br></body>';
 	//  Ielieciet šo kodu jaunā loga dokumentā
 	jaunsLogs.document.write(mansDok);
 }

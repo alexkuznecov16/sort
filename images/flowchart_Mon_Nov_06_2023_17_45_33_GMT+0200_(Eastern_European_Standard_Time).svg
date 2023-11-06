@@ -1,0 +1,777 @@
+
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2826" height="2246" shape-rendering="optimizeSpeed">
+                
+            <g>
+                <rect x="50" y="80" width="213.79999999999998" height="30" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
+                    
+                <line x1="60" y1="80" x2="60" y2="110" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+                <line x1="253.79999999999995" y1="80" x2="253.79999999999995" y2="110" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+             
+                <title>function menedzFunk()</title>
+            <text x="75" y="100" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="75" y="100">function menedzFunk()</tspan>
+            </text>
+                
+            </g>
+                <g>
+                   <rect x="87" y="128.5" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>let ievad1 = document.getElementById('ievade1').value</title>
+            <text x="102" y="148.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="148.5">let ievad1 = document.getElementById('ievade1').va...</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="87" y="177" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>let ievad2 = document.getElementById('ievade2').value</title>
+            <text x="102" y="197" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="197">let ievad2 = document.getElementById('ievade2').va...</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="87" y="225.5" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>let ievad3 = document.getElementById('ievade3').value</title>
+            <text x="102" y="245.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="245.5">let ievad3 = document.getElementById('ievade3').va...</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="87" y="274" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>let resultArea = document.getElementById('mansRezultats')</title>
+            <text x="102" y="294" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="294">let resultArea = document.getElementById('mansRezu...</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="87" y="322.5" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>let parbaudResult = parbaudFunk(ievad1, ievad2, ievad3)</title>
+            <text x="102" y="342.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="342.5">let parbaudResult = parbaudFunk(ievad1, ievad2, ie...</tspan>
+            </text>
+                   
+                   
+                </g><g>
+            <rect x="117" y="386" width="278.4" height="30" rx="3" ry="3" style="fill:#ce93d8; stroke:#444; stroke-width:1"></rect>                
+            <polygon points="87,401 117,371 147,401 117,431" style="fill:#ce93d8; stroke:#444; stroke-width:1"></polygon>
+            <title>(parbaudResult[1] === false)</title>
+            <text x="162" y="406" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="162" y="406">(parbaudResult[1] === false)</tspan>
+            </text>
+            
+            <text x="109.2" y="406" font-family="monospace" font-size="13" fill="#222">if</text> <text x="124.8" y="432.95" font-family="monospace" font-size="13" fill="#222">+</text> <text x="399.29999999999995" y="399.05" font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+                <g>
+                   <rect x="137" y="441" width="303" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>resultArea.value = parbaudResult[0]</title>
+            <text x="152" y="461" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="152" y="461">resultArea.value = parbaudResult[0]</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="137" y="489.5" width="264" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>resultArea.style.color = 'red'</title>
+            <text x="152" y="509.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="152" y="509.5">resultArea.style.color = 'red'</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="500" y="441" width="396.59999999999997" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>let finalResult = galvenaFunk(parbaudResult[0])</title>
+            <text x="515" y="461" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="515" y="461">let finalResult = galvenaFunk(parbaudResult[0])</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="500" y="489.5" width="264" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>resultArea.value = finalResult</title>
+            <text x="515" y="509.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="515" y="509.5">resultArea.value = finalResult</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="500" y="538" width="271.79999999999995" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>resultArea.style.color = 'lime'</title>
+            <text x="515" y="558" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="515" y="558">resultArea.style.color = 'lime'</tspan>
+            </text>
+                   
+                   
+                </g>
+            <g>
+                <rect x="50" y="603" width="393.2" height="30" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
+                    
+                <line x1="60" y1="603" x2="60" y2="633" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+                <line x1="433.2" y1="603" x2="433.2" y2="633" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+             
+                <title>function parbaudFunk(ievad1, ievad2, ievad3)</title>
+            <text x="75" y="623" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="75" y="623">function parbaudFunk(ievad1, ievad2, ievad3)</tspan>
+            </text>
+                
+            </g><g>
+            <rect x="117" y="666.5" width="418.8" height="30" rx="3" ry="3" style="fill:#ce93d8; stroke:#444; stroke-width:1"></rect>                
+            <polygon points="87,681.5 117,651.5 147,681.5 117,711.5" style="fill:#ce93d8; stroke:#444; stroke-width:1"></polygon>
+            <title>(ievad1 == '' &amp;&amp; ievad2 == '' &amp;&amp; ievad3 == '')</title>
+            <text x="162" y="686.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="162" y="686.5">(ievad1 == '' &amp;&amp; ievad2 == '' &amp;&amp; ievad3 == '')</tspan>
+            </text>
+            
+            <text x="109.2" y="686.5" font-family="monospace" font-size="13" fill="#222">if</text> <text x="124.8" y="713.45" font-family="monospace" font-size="13" fill="#222">+</text> <text x="539.6999999999999" y="679.55" font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+                <g>
+                   <rect x="137" y="721.5" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>result = ['Ievades laukos nevar but tuksi!', false]</title>
+            <text x="152" y="741.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="152" y="741.5">result = ['Ievades laukos nevar but tuksi!', false...</tspan>
+            </text>
+                   
+                   
+                </g><g>
+            <rect x="670.4" y="736.5" width="418.8" height="30" rx="3" ry="3" style="fill:#ce93d8; stroke:#444; stroke-width:1"></rect>                
+            <polygon points="640.4,751.5 670.4,721.5 700.4,751.5 670.4,781.5" style="fill:#ce93d8; stroke:#444; stroke-width:1"></polygon>
+            <title>(ievad1 == '' || ievad2 == '' || ievad3 == '')</title>
+            <text x="715.4" y="756.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="715.4" y="756.5">(ievad1 == '' || ievad2 == '' || ievad3 == '')</tspan>
+            </text>
+            
+            <text x="662.6" y="756.5" font-family="monospace" font-size="13" fill="#222">if</text> <text x="678.1999999999999" y="783.45" font-family="monospace" font-size="13" fill="#222">+</text> <text x="1093.1000000000001" y="749.55" font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+                <g>
+                   <rect x="690.4" y="791.5" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>result = ['Kaut kads ievades lauks ir tukss!', false]</title>
+            <text x="705.4" y="811.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="705.4" y="811.5">result = ['Kaut kads ievades lauks ir tukss!', fal...</tspan>
+            </text>
+                   
+                   
+                </g><g>
+            <rect x="1223.8" y="806.5" width="473.4" height="30" rx="3" ry="3" style="fill:#ce93d8; stroke:#444; stroke-width:1"></rect>                
+            <polygon points="1193.8,821.5 1223.8,791.5 1253.8,821.5 1223.8,851.5" style="fill:#ce93d8; stroke:#444; stroke-width:1"></polygon>
+            <title>(Number(ievad1) &gt;= Number(ievad3) || Number(ievad3) &lt;= Number(ievad2))</title>
+            <text x="1268.8" y="826.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="1268.8" y="826.5">(Number(ievad1) &gt;= Number(ievad3) || Number(ievad3...</tspan>
+            </text>
+            
+            <text x="1216" y="826.5" font-family="monospace" font-size="13" fill="#222">if</text> <text x="1231.6" y="853.45" font-family="monospace" font-size="13" fill="#222">+</text> <text x="1701.1" y="819.55" font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+                <g>
+                   <rect x="1243.8" y="861.5" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>result = ['Hipotenuza c var but tikai vairak neka kateti!', false]</title>
+            <text x="1258.8" y="881.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="1258.8" y="881.5">result = ['Hipotenuza c var but tikai vairak neka ...</tspan>
+            </text>
+                   
+                   
+                </g><g>
+            <rect x="1787.1999999999998" y="876.5" width="473.4" height="30" rx="3" ry="3" style="fill:#ce93d8; stroke:#444; stroke-width:1"></rect>                
+            <polygon points="1757.1999999999998,891.5 1787.1999999999998,861.5 1817.1999999999998,891.5 1787.1999999999998,921.5" style="fill:#ce93d8; stroke:#444; stroke-width:1"></polygon>
+            <title>(Number(ievad1) + Number(ievad2) &gt;= Number(ievad3))</title>
+            <text x="1832.1999999999998" y="896.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="1832.1999999999998" y="896.5">(Number(ievad1) + Number(ievad2) &gt;= Number(ievad3)...</tspan>
+            </text>
+            
+            <text x="1779.3999999999999" y="896.5" font-family="monospace" font-size="13" fill="#222">if</text> <text x="1794.9999999999998" y="923.45" font-family="monospace" font-size="13" fill="#222">+</text> <text x="2264.5" y="889.55" font-family="monospace" font-size="13" fill="#222">-</text>
+        </g>
+                <g>
+                   <rect x="1807.1999999999998" y="931.5" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>result = ['Katetu summa nevar but vienada vai vairak neka hipotenuza c!', false]</title>
+            <text x="1822.1999999999998" y="951.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="1822.1999999999998" y="951.5">result = ['Katetu summa nevar but vienada vai vair...</tspan>
+            </text>
+                   
+                   
+                </g>
+            <g>
+                <rect x="2320.6" y="931.5" width="291.79999999999995" height="30" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
+                    
+                <line x1="2330.6" y1="931.5" x2="2330.6" y2="961.5" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+                <line x1="2602.3999999999996" y1="931.5" x2="2602.3999999999996" y2="961.5" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+             
+                <title>function findTriangleArea(a, b)</title>
+            <text x="2345.6" y="951.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2345.6" y="951.5">function findTriangleArea(a, b)</tspan>
+            </text>
+                
+            </g>
+            <g>
+                <rect x="2357.6" y="980" width="225" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                
+                <line x1="2582.6" y1="990" x2="2587.6" y2="990" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+                
+                <line x1="2582.6" y1="1000" x2="2587.6" y2="1000" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+
+                <path d="M2587.6, 984 L2603.6, 995 L2587.6, 1006 Z" fill="#a5d6a7" stroke="#444" stroke-width="1"></path>
+                             
+                <title>return area = 0.5 * a * b</title>
+            <text x="2372.6" y="1000" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2372.6" y="1000">return area = 0.5 * a * b</tspan>
+            </text>
+                
+            </g>
+                <g>
+                   <rect x="2394.6" y="1028.5" width="170.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>area = 0.5 * a * b</title>
+            <text x="2409.6" y="1048.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2409.6" y="1048.5">area = 0.5 * a * b</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="2320.6" y="1077" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>let triangleAreaResult = findTriangleArea(ievad1, ievad2)</title>
+            <text x="2335.6" y="1097" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2335.6" y="1097">let triangleAreaResult = findTriangleArea(ievad1, ...</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="2320.6" y="1125.5" width="209.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>ievad1 = Number(ievad1)</title>
+            <text x="2335.6" y="1145.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2335.6" y="1145.5">ievad1 = Number(ievad1)</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="2320.6" y="1174" width="209.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>ievad2 = Number(ievad2)</title>
+            <text x="2335.6" y="1194" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2335.6" y="1194">ievad2 = Number(ievad2)</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="2320.6" y="1222.5" width="209.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>ievad3 = Number(ievad3)</title>
+            <text x="2335.6" y="1242.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2335.6" y="1242.5">ievad3 = Number(ievad3)</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="2320.6" y="1271" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>result = [`Perimetrs = ${ievad1 + ievad2 + ievad3}\n&gt;&gt; Pusperimetrs = ${(ievad1 + ievad2 + ievad3) / 2}\n&gt;&gt; Diametrs = ${2 * Math.floor(Math.sqrt(ievad1 ** 2 + ievad2 ** 2))}\n&gt;&gt; Laukums = ${triangleAreaResult} `, true]</title>
+            <text x="2335.6" y="1291" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2335.6" y="1291">result = [`Perimetrs = ${ievad1 + ievad2 + ievad3}...</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="2357.6" y="1319.5" width="217.2" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>ievad1 + ievad2 + ievad3</title>
+            <text x="2372.6" y="1339.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2372.6" y="1339.5">ievad1 + ievad2 + ievad3</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="2357.6" y="1368" width="264" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>(ievad1 + ievad2 + ievad3) / 2</title>
+            <text x="2372.6" y="1388" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2372.6" y="1388">(ievad1 + ievad2 + ievad3) / 2</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="2357.6" y="1416.5" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>2 * Math.floor(Math.sqrt(ievad1 ** 2 + ievad2 ** 2))</title>
+            <text x="2372.6" y="1436.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2372.6" y="1436.5">2 * Math.floor(Math.sqrt(ievad1 ** 2 + ievad2 ** 2...</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="2357.6" y="1465" width="170.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>triangleAreaResult</title>
+            <text x="2372.6" y="1485" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="2372.6" y="1485">triangleAreaResult</tspan>
+            </text>
+                   
+                   
+                </g>
+            <g>
+                <rect x="87" y="1515" width="131.39999999999998" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                
+                <line x1="218.39999999999998" y1="1525" x2="223.39999999999998" y2="1525" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+                
+                <line x1="218.39999999999998" y1="1535" x2="223.39999999999998" y2="1535" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+
+                <path d="M223.39999999999998, 1519 L239.39999999999998, 1530 L223.39999999999998, 1541 Z" fill="#a5d6a7" stroke="#444" stroke-width="1"></path>
+                             
+                <title>return result</title>
+            <text x="102" y="1535" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="1535">return result</tspan>
+            </text>
+                
+            </g>
+            <g>
+                <rect x="50" y="1578.5" width="291.79999999999995" height="30" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
+                    
+                <line x1="60" y1="1578.5" x2="60" y2="1608.5" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+                <line x1="331.79999999999995" y1="1578.5" x2="331.79999999999995" y2="1608.5" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+             
+                <title>function galvenaFunk(rezultats)</title>
+            <text x="75" y="1598.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="75" y="1598.5">function galvenaFunk(rezultats)</tspan>
+            </text>
+                
+            </g>
+            <g>
+                <rect x="87" y="1627" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                
+                <line x1="530.4" y1="1637" x2="535.4" y2="1637" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+                
+                <line x1="530.4" y1="1647" x2="535.4" y2="1647" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+
+                <path d="M535.4, 1631 L551.4, 1642 L535.4, 1653 Z" fill="#a5d6a7" stroke="#444" stroke-width="1"></path>
+                             
+                <title>return `Pēc liela darba veikšanas, rezultāts ir šāds:\n\n&gt;&gt; ${rezultats}`</title>
+            <text x="102" y="1647" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="1647">return `Pēc liela darba veikšanas, rezultāts ir šā...</tspan>
+            </text>
+                
+            </g>
+            <g>
+                <rect x="50" y="1690.5" width="206" height="30" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
+                    
+                <line x1="60" y1="1690.5" x2="60" y2="1720.5" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+                <line x1="246" y1="1690.5" x2="246" y2="1720.5" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+             
+                <title>function dzestFunk()</title>
+            <text x="75" y="1710.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="75" y="1710.5">function dzestFunk()</tspan>
+            </text>
+                
+            </g>
+                <g>
+                   <rect x="87" y="1739" width="381" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>document.getElementById('ievade1').value = ''</title>
+            <text x="102" y="1759" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="1759">document.getElementById('ievade1').value = ''</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="124" y="1787.5" width="295.2" height="30" rx="2" ry="2" style="fill:#C5E1A5; stroke:#444; stroke-width:1"></rect>
+                   <title>document.getElementById('ievade1')</title>
+            <text x="139" y="1807.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="139" y="1807.5">document.getElementById('ievade1')</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="87" y="1836" width="295.2" height="30" rx="2" ry="2" style="fill:#C5E1A5; stroke:#444; stroke-width:1"></rect>
+                   <title>document.getElementById('ievade2')</title>
+            <text x="102" y="1856" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="1856">document.getElementById('ievade2')</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="87" y="1884.5" width="295.2" height="30" rx="2" ry="2" style="fill:#C5E1A5; stroke:#444; stroke-width:1"></rect>
+                   <title>document.getElementById('ievade3')</title>
+            <text x="102" y="1904.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="1904.5">document.getElementById('ievade3')</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="87" y="1933" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>document.getElementById('mansRezultats').value = ''</title>
+            <text x="102" y="1953" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="1953">document.getElementById('mansRezultats').value = '...</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="124" y="1981.5" width="342" height="30" rx="2" ry="2" style="fill:#C5E1A5; stroke:#444; stroke-width:1"></rect>
+                   <title>document.getElementById('mansRezultats')</title>
+            <text x="139" y="2001.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="139" y="2001.5">document.getElementById('mansRezultats')</tspan>
+            </text>
+                   
+                   
+                </g>
+            <g>
+                <rect x="50" y="2045" width="221.6" height="30" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></rect>
+                    
+                <line x1="60" y1="2045" x2="60" y2="2075" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+                <line x1="261.6" y1="2045" x2="261.6" y2="2075" style="fill:#a5d6a7; stroke:#444; stroke-width:1"></line>
+             
+                <title>function izveidotDok()</title>
+            <text x="75" y="2065" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="75" y="2065">function izveidotDok()</tspan>
+            </text>
+                
+            </g>
+                <g>
+                   <rect x="87" y="2093.5" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>var jaunsLogs = window.open('', '_blank', 'top=0,left=100,width=700,height=850')</title>
+            <text x="102" y="2113.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="2113.5">var jaunsLogs = window.open('', '_blank', 'top=0,l...</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="87" y="2142" width="443.4" height="30" rx="3" ry="3" style="fill:#90caf9; stroke:#444; stroke-width:1"></rect>
+                   <title>var mansDok = '&lt;title&gt;Diagramma&lt;/title&gt;&lt;body style="margin:0; padding:10px; background-color:#e3ece3; text-align:center;"&gt;&lt;img src="../img/skaitliunburtiKARTOSANA.png" style="width: 95%;" alt="No JavaScript code in this example"&gt;&lt;br&gt;&lt;/body&gt;'</title>
+            <text x="102" y="2162" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="2162">var mansDok = '&lt;title&gt;Diagramma&lt;/title&gt;&lt;body style...</tspan>
+            </text>
+                   
+                   
+                </g>
+                <g>
+                   <rect x="87" y="2190.5" width="287.4" height="30" rx="2" ry="2" style="fill:#C5E1A5; stroke:#444; stroke-width:1"></rect>
+                   <title>jaunsLogs.document.write(mansDok)</title>
+            <text x="102" y="2210.5" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="102" y="2210.5">jaunsLogs.document.write(mansDok)</tspan>
+            </text>
+                   
+                   
+                </g>
+            <g>
+               <rect x="25" y="13.75" width="216.6" height="24" style="fill:#fff59d; stroke:#444; stroke-width:1"></rect>
+               <circle cx="25" cy="25" r="15" style="fill:#fff59d; stroke:#444; stroke-width:1"></circle>
+               <title>Program: source module</title>
+            <text x="55" y="30" font-family="monospace" font-size="13" fill="#222">
+                <tspan x="55" y="30">Program: source module</tspan>
+            </text>
+            </g>
+            <g>
+               <path d="M25, 40 L25 91 Q25 95
+                29 95
+                L42 95 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M42, 92 L50, 95 L42, 98 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 139.5 Q68.5 143.5
+                72.5 143.5
+                L79 143.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 140.5 L87, 143.5 L79, 146.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 188 Q68.5 192
+                72.5 192
+                L79 192 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 189 L87, 192 L79, 195 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 236.5 Q68.5 240.5
+                72.5 240.5
+                L79 240.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 237.5 L87, 240.5 L79, 243.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 285 Q68.5 289
+                72.5 289
+                L79 289 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 286 L87, 289 L79, 292 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 333.5 Q68.5 337.5
+                72.5 337.5
+                L79 337.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 334.5 L87, 337.5 L79, 340.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 110 L68.5 397 Q68.5 401
+                72.5 401
+                L79 401 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 398 L87, 401 L79, 404 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M117, 431 L117 452 Q117 456
+                121 456
+                L129 456 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M129, 453 L137, 456 L129, 459 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M117, 431 L117 500.5 Q117 504.5
+                121 504.5
+                L129 504.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M129, 501.5 L137, 504.5 L129, 507.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M395.4, 401 L476 401  Q480 401
+                480 405
+                L480 448 Q480 456
+                484 456
+                L492 456 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M492, 453 L500, 456 L492, 459 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M395.4, 401 L476 401  Q480 401
+                480 405
+                L480 496.5 Q480 504.5
+                484 504.5
+                L492 504.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M492, 501.5 L500, 504.5 L492, 507.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M395.4, 401 L476 401  Q480 401
+                480 405
+                L480 545 Q480 553
+                484 553
+                L492 553 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M492, 550 L500, 553 L492, 556 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M25, 40 L25 614 Q25 618
+                29 618
+                L42 618 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M42, 615 L50, 618 L42, 621 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 633 L68.5 677.5 Q68.5 681.5
+                72.5 681.5
+                L79 681.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 678.5 L87, 681.5 L79, 684.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M117, 711.5 L117 732.5 Q117 736.5
+                121 736.5
+                L129 736.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M129, 733.5 L137, 736.5 L129, 739.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M535.8, 681.5 L616.4 681.5  Q620.4 681.5
+                620.4 685.5
+                L620.4 743.5 Q620.4 751.5
+                624.4 751.5
+                L632.4 751.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M632.4, 748.5 L640.4, 751.5 L632.4, 754.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M670.4, 781.5 L670.4 802.5 Q670.4 806.5
+                674.4 806.5
+                L682.4 806.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M682.4, 803.5 L690.4, 806.5 L682.4, 809.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M1089.2, 751.5 L1169.8 751.5  Q1173.8 751.5
+                1173.8 755.5
+                L1173.8 813.5 Q1173.8 821.5
+                1177.8 821.5
+                L1185.8 821.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M1185.8, 818.5 L1193.8, 821.5 L1185.8, 824.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M1223.8, 851.5 L1223.8 872.5 Q1223.8 876.5
+                1227.8 876.5
+                L1235.8 876.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M1235.8, 873.5 L1243.8, 876.5 L1235.8, 879.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M1697.1999999999998, 821.5 L1733.1999999999998 821.5  Q1737.1999999999998 821.5
+                1737.1999999999998 825.5
+                L1737.1999999999998 883.5 Q1737.1999999999998 891.5
+                1741.1999999999998 891.5
+                L1749.1999999999998 891.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M1749.1999999999998, 888.5 L1757.1999999999998, 891.5 L1749.1999999999998, 894.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M1787.1999999999998, 921.5 L1787.1999999999998 942.5 Q1787.1999999999998 946.5
+                1791.1999999999998 946.5
+                L1799.1999999999998 946.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M1799.1999999999998, 943.5 L1807.1999999999998, 946.5 L1799.1999999999998, 949.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2260.6, 891.5 L2296.6 891.5  Q2300.6 891.5
+                2300.6 895.5
+                L2300.6 938.5 Q2300.6 946.5
+                2304.6 946.5
+                L2312.6 946.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2312.6, 943.5 L2320.6, 946.5 L2312.6, 949.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2339.1, 961.5 L2339.1 991 Q2339.1 995
+                2343.1 995
+                L2349.6 995 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2349.6, 992 L2357.6, 995 L2349.6, 998 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2376.1, 1010 L2376.1 1039.5 Q2376.1 1043.5
+                2380.1 1043.5
+                L2386.6 1043.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2386.6, 1040.5 L2394.6, 1043.5 L2386.6, 1046.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2260.6, 891.5 L2296.6 891.5  Q2300.6 891.5
+                2300.6 895.5
+                L2300.6 1084 Q2300.6 1092
+                2304.6 1092
+                L2312.6 1092 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2312.6, 1089 L2320.6, 1092 L2312.6, 1095 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2260.6, 891.5 L2296.6 891.5  Q2300.6 891.5
+                2300.6 895.5
+                L2300.6 1132.5 Q2300.6 1140.5
+                2304.6 1140.5
+                L2312.6 1140.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2312.6, 1137.5 L2320.6, 1140.5 L2312.6, 1143.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2260.6, 891.5 L2296.6 891.5  Q2300.6 891.5
+                2300.6 895.5
+                L2300.6 1181 Q2300.6 1189
+                2304.6 1189
+                L2312.6 1189 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2312.6, 1186 L2320.6, 1189 L2312.6, 1192 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2260.6, 891.5 L2296.6 891.5  Q2300.6 891.5
+                2300.6 895.5
+                L2300.6 1229.5 Q2300.6 1237.5
+                2304.6 1237.5
+                L2312.6 1237.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2312.6, 1234.5 L2320.6, 1237.5 L2312.6, 1240.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2260.6, 891.5 L2296.6 891.5  Q2300.6 891.5
+                2300.6 895.5
+                L2300.6 1278 Q2300.6 1286
+                2304.6 1286
+                L2312.6 1286 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2312.6, 1283 L2320.6, 1286 L2312.6, 1289 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2339.1, 1301 L2339.1 1330.5 Q2339.1 1334.5
+                2343.1 1334.5
+                L2349.6 1334.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2349.6, 1331.5 L2357.6, 1334.5 L2349.6, 1337.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2339.1, 1301 L2339.1 1379 Q2339.1 1383
+                2343.1 1383
+                L2349.6 1383 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2349.6, 1380 L2357.6, 1383 L2349.6, 1386 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2339.1, 1301 L2339.1 1427.5 Q2339.1 1431.5
+                2343.1 1431.5
+                L2349.6 1431.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2349.6, 1428.5 L2357.6, 1431.5 L2349.6, 1434.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M2339.1, 1301 L2339.1 1476 Q2339.1 1480
+                2343.1 1480
+                L2349.6 1480 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M2349.6, 1477 L2357.6, 1480 L2349.6, 1483 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 633 L68.5 1526 Q68.5 1530
+                72.5 1530
+                L79 1530 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 1527 L87, 1530 L79, 1533 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M25, 40 L25 1589.5 Q25 1593.5
+                29 1593.5
+                L42 1593.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M42, 1590.5 L50, 1593.5 L42, 1596.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 1608.5 L68.5 1638 Q68.5 1642
+                72.5 1642
+                L79 1642 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 1639 L87, 1642 L79, 1645 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M25, 40 L25 1701.5 Q25 1705.5
+                29 1705.5
+                L42 1705.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M42, 1702.5 L50, 1705.5 L42, 1708.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 1720.5 L68.5 1750 Q68.5 1754
+                72.5 1754
+                L79 1754 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 1751 L87, 1754 L79, 1757 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M105.5, 1769 L105.5 1798.5 Q105.5 1802.5
+                109.5 1802.5
+                L116 1802.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M116, 1799.5 L124, 1802.5 L116, 1805.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 1720.5 L68.5 1847 Q68.5 1851
+                72.5 1851
+                L79 1851 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 1848 L87, 1851 L79, 1854 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 1720.5 L68.5 1895.5 Q68.5 1899.5
+                72.5 1899.5
+                L79 1899.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 1896.5 L87, 1899.5 L79, 1902.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 1720.5 L68.5 1944 Q68.5 1948
+                72.5 1948
+                L79 1948 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 1945 L87, 1948 L79, 1951 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M105.5, 1963 L105.5 1992.5 Q105.5 1996.5
+                109.5 1996.5
+                L116 1996.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M116, 1993.5 L124, 1996.5 L116, 1999.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M25, 40 L25 2056 Q25 2060
+                29 2060
+                L42 2060 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M42, 2057 L50, 2060 L42, 2063 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 2075 L68.5 2104.5 Q68.5 2108.5
+                72.5 2108.5
+                L79 2108.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 2105.5 L87, 2108.5 L79, 2111.5 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 2075 L68.5 2153 Q68.5 2157
+                72.5 2157
+                L79 2157 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 2154 L87, 2157 L79, 2160 Z" fill="#333"></path>
+            </g>
+            <g>
+               <path d="M68.5, 2075 L68.5 2201.5 Q68.5 2205.5
+                72.5 2205.5
+                L79 2205.5 " style="fill:none; stroke:#444; stroke-width:1"></path>
+               <path d="M79, 2202.5 L87, 2205.5 L79, 2208.5 Z" fill="#333"></path>
+            </g>
+            </svg>
