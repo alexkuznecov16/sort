@@ -27,7 +27,7 @@ The correctness of the code (HTML5, CSS3 and JavaScript) has been verified on Wi
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="Aleksandrs (C)" />
-		<title>Sort...</title>
+		<title>Matematika</title>
 		<link rel="icon" type="image/png" href="./images/favicon.png" />
 		<!--  Google Fontu saite  -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Spinnaker" />
@@ -38,35 +38,26 @@ The correctness of the code (HTML5, CSS3 and JavaScript) has been verified on Wi
 	</head>
 	<body>
 		<!--  Virsraksts  -->
-		<p class="izmerXXL" style="margin-bottom: 0px"><i class="fas fa-laptop-code"></i> Skaitlu un burtu sortešana</p>
+		<p class="izmerXXL" style="margin-bottom: 0px"><i class="fas fa-laptop-code"></i> Matematika</p>
 		<p class="izmerM zils centra" style="margin: 10px 0px 0px 0px">[ Tēma ir veltīta CSS3 dizaina stila optimizācijas problēmai HTML5 dokumentā. ]</p>
 
 		<!--  Darba galds  -->
 		<main>
 			<div class="ievade">
-				<p class="izmerL"
-					>Lūdzu, ievadiet skaitlus vai burtus pec tada piemera: <br />
-					6 3 5 1 7 2...</p
-				>
+				<p class="izmerL">Lūdzu, ievadiet visas vertibas:</p>
 				<!--  Teksta lauki datu ievadīšanai  -->
-				<label for="ievade1">Ievadiet vērtības:</label>
-				<input type="text" id="ievade1" placeholder="27 89 516 2" />
+				<label for="ievade1">Ievadiet sanu a vertibu:</label>
+				<input type="number" id="ievade1" placeholder="Ievadiet 1. vertibu" oninput="this.value = this.value.replace(/[^0-9]/g, '');" min="1" />
+				<!-- drikst ievadit tikai skaitlus -->
 				<br /><br />
-				<!--  Lauks (atlasīt) ar datiem, kas jānodod JS funkcijai  -->
-				<label for="maniDati1">Izvelejiet vertības tipu:</label><br />
-				<select id="maniDati1">
-					<option value="0" selected>Izvēle</option>
-					<option value="1">Skaitļis</option>
-					<option value="2">Burts</option>
-				</select>
+				<label for="ievade2">Ievadiet sanu b vertibu:</label>
+				<input type="number" id="ievade2" placeholder="Ievadiet 2. vertibu" oninput="this.value = this.value.replace(/[^0-9]/g, '');" min="1" />
+				<!-- drikst ievadit tikai skaitlus -->
 				<br /><br />
-				<!--  Lauks (atlasīt) ar datiem, kas jānodod JS funkcijai  -->
-				<label for="maniDati2">Izvelejiet sortesanas secibu:</label><br />
-				<select id="maniDati2">
-					<option value="0" selected>Izvēle</option>
-					<option value="1">Dilstoša</option>
-					<option value="2">Augoša</option>
-				</select>
+				<label for="ievade3">Ievadiet sanu c vertibu:</label>
+				<input type="number" id="ievade3" placeholder="Ievadiet 3. vertibu" oninput="this.value = this.value.replace(/[^0-9]/g, '');" min="1" />
+				<!-- drikst ievadit tikai skaitlus -->
+				<br /><br />
 				<br /><br />
 				<!--  Poga JS koda sākšanai  -->
 				<input type="button" onclick="menedzFunk();" value="Aprēķināt" />
@@ -77,7 +68,14 @@ The correctness of the code (HTML5, CSS3 and JavaScript) has been verified on Wi
 			<div class="izvade">
 				<!--  Lauks ar resultātu  -->
 				<label for="mansRezultats">JavaScript koda darba rezultāts:&emsp;</label>
-				<textarea id="mansRezultats" placeholder="Rezultāts" rows="19" spellcheck="false" style="width: 99%; font-size: 22px; color: lime; background-color: black; padding: 18px"></textarea>
+				<textarea
+					readonly
+					id="mansRezultats"
+					placeholder="Rezultāts"
+					rows="19"
+					spellcheck="false"
+					style="width: 99%; font-size: 22px; color: lime; background-color: black; padding: 18px"
+				></textarea>
 			</div>
 		</main>
 
@@ -110,6 +108,7 @@ The correctness of the code (HTML5, CSS3 and JavaScript) has been verified on Wi
 			</blockquote>
 			<i class="fa-brands fa-js"></i>
 			<pre>
+<<<<<<< HEAD
 <span class="peleks">//  Funkcija datu iegūšanai un gala rezultātu izdrukāšanai</span>
 function menedzFunk() {
 	let ievad1 = document.getElementById('ievade1').value.split(' '); <span class="peleks">// ievaditi skaitli/burti. Tapec ka ir .value.split =>dati bus massivaa</span>
@@ -152,6 +151,10 @@ function parbaudFunk(userIevad, valueType, sortType) {
 		return [, true]; <span class="peleks">// nav nekas ievadits, jo pec .sort() pamatam bus augosa</span>
 	}
 }
+=======
+oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+<span class="peleks">// - ir funkcija, kur onInput (oninput = kad input bus aktivs) this.value (sis inputa value) .replace(/[^0-9]/g, ''); (mainis visu un drikst izmantot tikai skaitlus)</span>
+>>>>>>> 2aa41b9bcb4061464989d7a2b6292ac6f9b30c86
 			</pre>
 			<blockquote
 				>Noklikšķiniet uz <a href="" onclick="izveidotDok()">šīs ikonas <i class="fa-solid fa-diagram-project"></i></a>, lai skatītu šī JavaScript koda blokshēmu.</blockquote
